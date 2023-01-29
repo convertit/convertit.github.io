@@ -162,5 +162,7 @@ footer {
 
 @media screen and (min-width: 600px) {
     /* Larger screens */
-
+    .hover:hover{
+        cursor: pointer
+    }
 }

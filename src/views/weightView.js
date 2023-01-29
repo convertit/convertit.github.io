@@ -16,40 +16,40 @@ let weightTemplate = (onConvert, data) => html`
         <legend>From Unit</legend>
 
         <div class="from">
-            <input type="radio" id="kg" name="from" value="kilogram" checked="checked">
-            <label for="kg">Kilogram</label>
+            <input class="hover" type="radio" id="kg" name="from" value="kilogram" checked="checked">
+            <label class="hover" for="kg">Kilogram</label>
         </div>
         <div class="from">
-            <input type="radio" id="pound" name="from" value="pound">
-            <label for="pound">Pound</label>
+            <input class="hover" type="radio" id="pound" name="from" value="pound">
+            <label class="hover" for="pound">Pound</label>
         </div>
         <div class="from">
-            <input type="radio" id="gr" name="from" value="gram">
-            <label for="gr">Gram</label>
+            <input class="hover" type="radio" id="gr" name="from" value="gram">
+            <label class="hover" for="gr">Gram</label>
         </div>
         <div class="from">
-            <input type="radio" id="mg" name="from" value="milligram">
-            <label for="mg">Milligram</label>
+            <input class="hover" type="radio" id="mg" name="from" value="milligram">
+            <label class="hover" for="mg">Milligram</label>
         </div>
         <div class="form">
-            <input type="radio" id="ounce" name="from" value="ounce">
-            <label for="ounce">Ounce</label>
+            <input class="hover" type="radio" id="ounce" name="from" value="ounce">
+            <label class="hover" for="ounce">Ounce</label>
         </div>
         <div class="form">
-            <input type="radio" id="troyOunce" name="from" value="troy ounce">
-            <label for="troyOunce">Troy ounce</label>
+            <input class="hover" type="radio" id="troyOunce" name="from" value="troy ounce">
+            <label class="hover" for="troyOunce">Troy ounce</label>
         </div>
         <div class="form">
-            <input type="radio" id="grain" name="from" value="grain">
-            <label for="grain">Grain</label>
+            <input class="hover" type="radio" id="grain" name="from" value="grain">
+            <label class="hover" for="grain">Grain</label>
         </div>
         <div class="form">
-            <input type="radio" id="stone" name="from" value="stone">
-            <label for="stone">Stone</label>
+            <input class="hover" type="radio" id="stone" name="from" value="stone">
+            <label class="hover" for="stone">Stone</label>
         </div>
         <div class="form">
-            <input type="radio" id="ton" name="from" value="ton">
-            <label for="ton">Ton</label>
+            <input class="hover" type="radio" id="ton" name="from" value="ton">
+            <label class="hover" for="ton">Ton</label>
         </div>
     </form>
 
@@ -58,40 +58,40 @@ let weightTemplate = (onConvert, data) => html`
         <legend>To Unit</legend>
 
         <div class="to">
-            <input type="radio" id="to-kg" name="to" value="kilogram" checked="checked">
-            <label for="to-kg">Kilogram</label>
+            <input class="hover" type="radio" id="to-kg" name="to" value="kilogram" checked="checked">
+            <label class="hover" for="to-kg">Kilogram</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-pound" name="to" value="pound">
-            <label for="to-pound">Pound</label>
+            <input class="hover" type="radio" id="to-pound" name="to" value="pound">
+            <label class="hover" for="to-pound">Pound</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-gr" name="to" value="gram">
-            <label for="to-gr">Gram</label>
+            <input class="hover" type="radio" id="to-gr" name="to" value="gram">
+            <label class="hover" for="to-gr">Gram</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-mg" name="to" value="milligram">
-            <label for="to-mg">Milligram</label>
+            <input class="hover" type="radio" id="to-mg" name="to" value="milligram">
+            <label class="hover" for="to-mg">Milligram</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-ounce" name="to" value="ounce">
-            <label for="to-ounce">Ounce</label>
+            <input class="hover" type="radio" id="to-ounce" name="to" value="ounce">
+            <label class="hover" for="to-ounce">Ounce</label>
         </div>
         <div class="form">
-            <input type="radio" id="to-troyOunce" name="to" value="troy ounce">
-            <label for="to-troyOunce">Troy ounce</label>
+            <input class="hover" type="radio" id="to-troyOunce" name="to" value="troy ounce">
+            <label class="hover" for="to-troyOunce">Troy ounce</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-grain" name="to" value="grain">
-            <label for="to-grain">Grain</label>
+            <input class="hover" type="radio" id="to-grain" name="to" value="grain">
+            <label class="hover" for="to-grain">Grain</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-stone" name="to" value="stone">
-            <label for="to-stone">Stone</label>
+            <input class="hover" type="radio" id="to-stone" name="to" value="stone">
+            <label class="hover" for="to-stone">Stone</label>
         </div>
         <div class="to">
-            <input type="radio" id="to-ton" name="to" value="ton">
-            <label for="to-ton">Ton</label>
+            <input class="hover" type="radio" id="to-ton" name="to" value="ton">
+            <label class="hover" for="to-ton">Ton</label>
         </div>
     </form>
 </div>`

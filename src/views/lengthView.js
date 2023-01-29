@@ -18,52 +18,52 @@ let lengthTemplate = (onConvert, data) => html`
     
     
             <div class="from">
-                <input type="radio" id="km" name="from" value="kilometre" checked="checked">
-                <label for="km">Kilometre</label>
+                <input class="hover" type="radio" id="km" name="from" value="kilometre" checked="checked">
+                <label class="hover" for="km">Kilometre</label>
             </div>
             <div class="from">
-                <input type="radio" id="mile" name="from" value="mile">
-                <label for="mile">Mile</label>
+                <input class="hover" type="radio" id="mile" name="from" value="mile">
+                <label class="hover" for="mile">Mile</label>
             </div>
             <div class="from">
-                <input type="radio" id="m" name="from" value="metre">
-                <label for="m">Metre</label>
+                <input class="hover" type="radio" id="m" name="from" value="metre">
+                <label class="hover" for="m">Metre</label>
             </div>
             <div class="from">
-                <input type="radio" id="cm" name="from" value="centimetre">
-                <label for="cm">Centimetre</label>
+                <input class="hover" type="radio" id="cm" name="from" value="centimetre">
+                <label class="hover" for="cm">Centimetre</label>
             </div>
             <div class="form">
-                <input type="radio" id="mm" name="from" value="millimetre">
-                <label for="mm">Millimetre</label>
+                <input class="hover" type="radio" id="mm" name="from" value="millimetre">
+                <label class="hover" for="mm">Millimetre</label>
             </div>
             <div class="form">
-                <input type="radio" id="mcrm" name="from" value="micrometre">
-                <label for="mcrm">Micrometre</label>
+                <input class="hover" type="radio" id="mcrm" name="from" value="micrometre">
+                <label class="hover" for="mcrm">Micrometre</label>
             </div>
             <div class="form">
-                <input type="radio" id="yard" name="from" value="yard">
-                <label for="yard">Yard</label>
+                <input class="hover" type="radio" id="yard" name="from" value="yard">
+                <label class="hover" for="yard">Yard</label>
             </div>
             <div class="form">
-                <input type="radio" id="ft" name="from" value="feet">
-                <label for="ft">Foot</label>
+                <input class="hover" type="radio" id="ft" name="from" value="feet">
+                <label class="hover" for="ft">Foot</label>
             </div>
             <div class="form">
-                <input type="radio" id="inch" name="from" value="inch">
-                <label for="inch">Inch</label>
+                <input class="hover" type="radio" id="inch" name="from" value="inch">
+                <label class="hover" for="inch">Inch</label>
             </div>
             <div class="form">
-                <input type="radio" id="nmile" name="from" value="nauticalMile">
-                <label for="nmile">Nautical Mile</label>
+                <input class="hover" type="radio" id="nmile" name="from" value="nauticalMile">
+                <label class="hover" for="nmile">Nautical Mile</label>
             </div>
             <div class="form">
-                <input type="radio" id="furlong" name="from" value="furlong">
-                <label for="furlong">Furlong</label>
+                <input class="hover" type="radio" id="furlong" name="from" value="furlong">
+                <label class="hover" for="furlong">Furlong</label>
             </div>
             <div class="form">
-                <input type="radio" id="lyr" name="from" value="lightYear">
-                <label for="lyr">Light Year</label>
+                <input class="hover" type="radio" id="lyr" name="from" value="lightYear">
+                <label class="hover" for="lyr">Light Year</label>
             </div>
         </form>
     
@@ -71,52 +71,52 @@ let lengthTemplate = (onConvert, data) => html`
         <form id="lengthTo" @change=${onConvert}>
             <legend>To Unit</legend>
             <div class="to">
-                <input type="radio" id="to-km" name="to" value="kilometre" checked="checked">
-                <label for="to-km">Kilometre</label>
+                <input class="hover" type="radio" id="to-km" name="to" value="kilometre" checked="checked">
+                <label class="hover" for="to-km">Kilometre</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-mile" name="to" value="mile">
-                <label for="to-mile">Mile</label>
+                <input class="hover" type="radio" id="to-mile" name="to" value="mile">
+                <label class="hover" for="to-mile">Mile</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-m" name="to" value="metre">
-                <label for="to-m">Metre</label>
+                <input class="hover" type="radio" id="to-m" name="to" value="metre">
+                <label class="hover" for="to-m">Metre</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-cm" name="to" value="centimetre">
-                <label for="to-cm">Centimetre</label>
+                <input class="hover" type="radio" id="to-cm" name="to" value="centimetre">
+                <label class="hover" for="to-cm">Centimetre</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-mm" name="to" value="millimetre">
-                <label for="to-mm">Millimetre</label>
+                <input class="hover" type="radio" id="to-mm" name="to" value="millimetre">
+                <label class="hover" for="to-mm">Millimetre</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-mcrm" name="to" value="micrometre">
-                <label for="to-mcrm">Micrometre</label>
+                <input class="hover" type="radio" id="to-mcrm" name="to" value="micrometre">
+                <label class="hover" for="to-mcrm">Micrometre</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-yard" name="to" value="yard">
-                <label for="to-yard">Yard</label>
+                <input class="hover" type="radio" id="to-yard" name="to" value="yard">
+                <label class="hover" for="to-yard">Yard</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-ft" name="to" value="feet">
-                <label for="to-ft">Foot</label>
+                <input class="hover" type="radio" id="to-ft" name="to" value="feet">
+                <label class="hover" for="to-ft">Foot</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-inch" name="to" value="inch">
-                <label for="to-inch">Inch</label>
+                <input class="hover" type="radio" id="to-inch" name="to" value="inch">
+                <label class="hover" for="to-inch">Inch</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-nmile" name="to" value="nauticalMile">
-                <label for="to-nmile">Nautical Mile</label>
+                <input class="hover" type="radio" id="to-nmile" name="to" value="nauticalMile">
+                <label class="hover" for="to-nmile">Nautical Mile</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-furlong" name="to" value="furlong">
-                <label for="to-furlong">Furlong</label>
+                <input class="hover" type="radio" id="to-furlong" name="to" value="furlong">
+                <label class="hover" for="to-furlong">Furlong</label>
             </div>
             <div class="to">
-                <input type="radio" id="to-lyr" name="to" value="lightYear">
-                <label for="to-lyr">Light Year</label>
+                <input class="hover" type="radio" id="to-lyr" name="to" value="lightYear">
+                <label class="hover" for="to-lyr">Light Year</label>
             </div>
         </form>
     </div>`

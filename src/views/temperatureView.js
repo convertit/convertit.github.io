@@ -18,16 +18,16 @@ let temperatureTemplate = (onConvert, data) => html`
     
     
             <div class="from">
-                <input type="radio" id="celsius" name="from" value="celsius" checked="checked">
-                <label for="celsius">Celsius</label>
+                <input class="hover" type="radio" id="celsius" name="from" value="celsius" checked="checked">
+                <label class="hover" for="celsius">Celsius</label>
             </div>
             <div class="from">
-                <input type="radio" id="kelvin" name="from" value="kelvin">
-                <label for="kelvin">Kelvin</label>
+                <input class="hover" type="radio" id="kelvin" name="from" value="kelvin">
+                <label class="hover" for="kelvin">Kelvin</label>
             </div>
             <div class="from">
-                <input type="radio" id="fahrenheit" name="from" value="fahrenheit">
-                <label for="fahrenheit">Fahrenheit</label>
+                <input class="hover" type="radio" id="fahrenheit" name="from" value="fahrenheit">
+                <label class="hover" for="fahrenheit">Fahrenheit</label>
             </div>
         </form>
     
@@ -35,16 +35,16 @@ let temperatureTemplate = (onConvert, data) => html`
         <form id="tempTo" @change=${onConvert}>
             <legend>To Unit</legend>
             <div class="from">
-                <input type="radio" id="to-celsius" name="to" value="celsius" checked="checked">
-                <label for="to-celsius">Celsius</label>
+                <input class="hover" type="radio" id="to-celsius" name="to" value="celsius" checked="checked">
+                <label class="hover" for="to-celsius">Celsius</label>
             </div>
             <div class="from">
-                <input type="radio" id="to-kelvin" name="to" value="kelvin">
-                <label for="to-kelvin">Kelvin</label>
+                <input class="hover" type="radio" id="to-kelvin" name="to" value="kelvin">
+                <label class="hover" for="to-kelvin">Kelvin</label>
             </div>
             <div class="from">
-                <input type="radio" id="to-fahrenheit" name="to" value="fahrenheit">
-                <label for="to-fahrenheit">Fahrenheit</label>
+                <input class="hover" type="radio" id="to-fahrenheit" name="to" value="fahrenheit">
+                <label class="hover" for="to-fahrenheit">Fahrenheit</label>
             </div>
         </form>
     </div>`
