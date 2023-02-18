@@ -4,10 +4,10 @@ import { engine } from '../logic/engine.js';
 let timeTemplate = (onConvert, data) => html`
 <div id="input-num">
     <input type="number" id="num" @input=${onConvert} value="0">
-    <label for="number" id="from-label">${data.fromLabel ? data.fromLabel : "years"}</label>
+    <label for="number" id="from-label">${data.fromUnit ? data.fromUnit : "year"}</label>
     <p>equals</p>
     <p id="result">${data.result ? data.result : 0}</p>
-    <p id="result-unit">${data.resultUnit ? data.resultUnit : 'years'}</p>
+    <p id="result-unit">${data.toUnit ? data.toUnit : 'year'}</p>
     <p class="smaller">${data.convertedNum !== data.result ? 'rounded from ' + data.convertedNum : null}</p>
 </div>
 

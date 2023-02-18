@@ -4,10 +4,10 @@ import { engine } from '../logic/engine.js';
 let areaTemplate = (onConvert, data) => html`
     <div id="input-num">
         <input type="number" id="num" @input=${onConvert} value="0">
-        <label for="number" id="from-label">${data.fromLabel ? data.fromLabel : 'kilometers'}</label>
+        <label for="number" id="from-label">${data.fromUnit ? data.fromUnit : 'hectare'}</label>
         <p>equals</p>
         <p id="result">${data.result ? data.result : 0}</p>
-        <p id="result-unit">${data.resultUnit ? data.resultUnit : 'kilometres'}</p>
+        <p id="result-unit">${data.toUnit ? data.toUnit : 'hectare'}</p>
         <p class="smaller">${data.convertedNum !== data.result ? 'rounded from ' + data.convertedNum : null}</p>
     
     </div>
@@ -61,7 +61,7 @@ let areaTemplate = (onConvert, data) => html`
                 <label class="hover" for="sqFt">Sq Foot</label>
             </div>
             <div class="from">
-                <input class="hover" type="radio" id="sqInch" name="from" value="sq inche">
+                <input class="hover" type="radio" id="sqInch" name="from" value="sq inches">
                 <label class="hover" for="sqInch">Sq Inch</label>
             </div>
 
@@ -115,7 +115,7 @@ let areaTemplate = (onConvert, data) => html`
                 <label class="hover" for="to-sqFt">Sq Foot</label>
             </div>
             <div class="to">
-                <input class="hover" type="radio" id="to-sqInch" name="to" value="sq inche">
+                <input class="hover" type="radio" id="to-sqInch" name="to" value="sq inches">
                 <label class="hover" for="to-sqInch">Sq Inch</label>
             </div>
 

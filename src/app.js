@@ -9,6 +9,7 @@ import { showArea } from './views/areaView.js';
 import { showTimeView } from './views/timeView.js';
 import { showWeightView } from './views/weightView.js';
 import { showTemp } from './views/temperatureView.js';
+import { showMemory } from './views/memoryView.js';
 
 
 
@@ -25,6 +26,7 @@ page('/area', showArea)
 page('/time', showTimeView);
 page('/weight', showWeightView);
 page('/temperature', showTemp);
+page('/memory', showMemory);
 
 page.start();
 

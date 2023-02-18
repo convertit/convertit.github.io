@@ -1,5 +1,6 @@
 import { convertTemp } from "./handleTemp.js";
 import { units } from "./units.js";
+import { sanitizer } from "./sanitizer.js";
 
 export function engine(keyWord) {
 
@@ -11,45 +12,51 @@ export function engine(keyWord) {
 
     let fromUnit = '';
     let toUnit = '';
-    let num = Number(document.getElementById('num').value);
+    let num;
+    if (sanitizer(Number(document.getElementById('num').value)) || Number(document.getElementById('num').value) == 0) {
+        num = Number(document.getElementById('num').value);
+    } else {
+        throw new Error('Invalid input!');
+    }
 
     let numInDefault;
     let convertedNum;
-    let fromLabel;
-    let resultUnit;
 
 
     for (let el of fromArr) {
         if (el.children[0].checked) {
-            fromUnit = el.children[0].value;
+            if (sanitizer(el.children[0].value)) {
+                fromUnit = el.children[0].value;
+            } else {
+                throw new Error('Invalid input!');
+            }
         }
     }
 
     for (let el of toArr) {
         if (el.children[0].checked) {
-            toUnit = el.children[0].value;
+            if (sanitizer(el.children[0].value)) {
+                toUnit = el.children[0].value;
+            } else {
+                throw new Error('Invalid input!');
+            }
         }
     }
 
     if (keyWord === 'temp') {
         convertedNum = convertTemp(fromUnit, toUnit, num);
-        fromLabel = fromUnit;
-        resultUnit = toUnit;
     } else {
         numInDefault = num * units()[keyWord][fromUnit];
         convertedNum = numInDefault / units()[keyWord][toUnit];
-
-        fromLabel = fromUnit === 'inch' ? fromUnit + 'es' : fromUnit + 's';
-        resultUnit = toUnit === 'inch' ? toUnit + 'es' : toUnit + 's';
     }
-    
+
     let result = Number((convertedNum).toFixed(4));
 
     return {
-        fromLabel,
+        fromUnit,
         result,
         convertedNum,
-        resultUnit
+        toUnit
     }
 
 

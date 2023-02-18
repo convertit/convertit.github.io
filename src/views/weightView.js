@@ -4,10 +4,10 @@ import { engine } from '../logic/engine.js';
 let weightTemplate = (onConvert, data) => html`
 <div id="input-num">
     <input type="number" id="num" @input=${onConvert} value="0">
-    <label for="number" id="from-label">${data.fromLabel ? data.fromLabel : 'kilograms'}</label>
+    <label for="number" id="from-label">${data.fromUnit ? data.fromUnit : 'kilogram'}</label>
     <p>equals</p>
     <p id="result">${data.result ? data.result : 0}</p>
-    <p id="result-unit">${data.resultUnit ? data.resultUnit : 'kilograms'}</p>
+    <p id="result-unit">${data.toUnit ? data.toUnit : 'kilogram'}</p>
     <p class="smaller">${data.convertedNum !== data.result ? 'rounded from ' + data.convertedNum : null}</p>
 </div>
 

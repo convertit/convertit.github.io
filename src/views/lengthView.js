@@ -4,10 +4,10 @@ import { engine } from '../logic/engine.js';
 let lengthTemplate = (onConvert, data) => html`
     <div id="input-num">
         <input type="number" id="num" @input=${onConvert} value="0">
-        <label for="number" id="from-label">${data.fromLabel ? data.fromLabel : 'kilometers'}</label>
+        <label for="number" id="from-label">${data.fromUnit ? data.fromUnit : 'kilometre'}</label>
         <p>equals</p>
         <p id="result">${data.result ? data.result : 0}</p>
-        <p id="result-unit">${data.resultUnit ? data.resultUnit : 'kilometres'}</p>
+        <p id="result-unit">${data.toUnit ? data.toUnit : 'kilometre'}</p>
         <p class="smaller">${data.convertedNum !== data.result ? 'rounded from ' + data.convertedNum : null}</p>
     
     </div>
@@ -33,35 +33,35 @@ let lengthTemplate = (onConvert, data) => html`
                 <input class="hover" type="radio" id="cm" name="from" value="centimetre">
                 <label class="hover" for="cm">Centimetre</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="mm" name="from" value="millimetre">
                 <label class="hover" for="mm">Millimetre</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="mcrm" name="from" value="micrometre">
                 <label class="hover" for="mcrm">Micrometre</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="yard" name="from" value="yard">
                 <label class="hover" for="yard">Yard</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="ft" name="from" value="feet">
                 <label class="hover" for="ft">Foot</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="inch" name="from" value="inch">
                 <label class="hover" for="inch">Inch</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="nmile" name="from" value="nauticalMile">
                 <label class="hover" for="nmile">Nautical Mile</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="furlong" name="from" value="furlong">
                 <label class="hover" for="furlong">Furlong</label>
             </div>
-            <div class="form">
+            <div class="from">
                 <input class="hover" type="radio" id="lyr" name="from" value="lightYear">
                 <label class="hover" for="lyr">Light Year</label>
             </div>

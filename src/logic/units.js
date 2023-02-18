@@ -49,14 +49,27 @@ export function units() {
         "sq mile": 2589988.110336,
         "sq yard": 0.83612736,
         "sq feet": 0.09290304,
-        "sq inche": 0.00064516,
+        "sq inches": 0.00064516,
+    }
 
+    let kbEqual = {
+        bit: 0.0001220703,
+        byte: 0.0009765625,
+        kilobit: 0.1249999872,
+        kylobyte: 1,
+        megabit: 127.9999868928,
+        megabyte: 1024,
+        gigabit: 131071.98657823,
+        gigabyte: 1048576,
+        terabit: 134217714.25611,
+        terabyte: 1073741824
     }
 
     return {
         length: cmEqual,
         time: secEqual,
         weight: gramEqual,
-        area: sqMEqual
+        area: sqMEqual,
+        memory: kbEqual
     };
 }
