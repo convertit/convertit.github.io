@@ -5,6 +5,7 @@ let weightTemplate = (onConvert, data) => html`
 <div id="input-num">
     <input type="number" id="num" @input=${onConvert} value="0">
     <label for="number" id="from-label">${data.fromUnit ? data.fromUnit : 'kilogram'}</label>
+    ${data.err ? html`<label class="error">${data.err}</label>` : null}
     <p>equals</p>
     <p id="result">${data.result ? data.result : 0}</p>
     <p id="result-unit">${data.toUnit ? data.toUnit : 'kilogram'}</p>

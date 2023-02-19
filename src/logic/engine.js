@@ -13,10 +13,11 @@ export function engine(keyWord) {
     let fromUnit = '';
     let toUnit = '';
     let num;
+    let err;
     if (sanitizer(Number(document.getElementById('num').value)) || Number(document.getElementById('num').value) == 0) {
         num = Number(document.getElementById('num').value);
     } else {
-        throw new Error('Invalid input!');
+        err = 'Input invalid or too big!';
     }
 
     let numInDefault;
@@ -45,18 +46,23 @@ export function engine(keyWord) {
 
     if (keyWord === 'temp') {
         convertedNum = convertTemp(fromUnit, toUnit, num);
+        if (convertedNum === undefined) {
+            err = 'Input invalid or too big!'
+        }
     } else {
         numInDefault = num * units()[keyWord][fromUnit];
         convertedNum = numInDefault / units()[keyWord][toUnit];
     }
 
-    let result = Number((convertedNum).toFixed(4));
+    let result;
+    err ? result = NaN : result = Number((convertedNum).toFixed(4));
 
     return {
         fromUnit,
         result,
         convertedNum,
-        toUnit
+        toUnit,
+        err
     }
 
 

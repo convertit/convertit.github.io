@@ -92,6 +92,16 @@ footer {
     align-items: flex-end;
 }
 
+.error {
+    color: black;
+    background-color: orangered;
+    margin: 1em;
+    padding: 0.25em;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
 @media screen and (max-width: 600px) {
 
     /* Small screens */
