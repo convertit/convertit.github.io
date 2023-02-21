@@ -38,13 +38,13 @@ h1.main {
     color: #ff5722;
 }
 
-p.secondary {
+h3.secondary {
     font-size: 3em;
     color: #ff5722;
 }
 
 p.note {
-    font-size: 1.7em;
+    font-size: 2em;
     color: #ff5722;
 }
 

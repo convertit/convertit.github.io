@@ -3,8 +3,8 @@ import { html, page } from '../lib/lib.js'
 let homeTemplate = () => html`
     <div class="main">
         <!--display: none// to do-->
-        <h1 class="main">Welcome to the Simple Unit Converter!</h1>
-        <p class="secondary">Choose a unit from above</p>
+        <h1 class="main">Welcome to a simple Unit Converter!</h1>
+        <h3 class="secondary">Choose a unit from above</h3>
         <p class="note">Keep in mind that this website is still being worked on.
             <br>
             New functionalities will be added soon.
