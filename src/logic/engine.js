@@ -1,3 +1,5 @@
+import { Decimal } from '../lib/lib.js';
+
 import { convertTemp } from "./handleTemp.js";
 import { units } from "./units.js";
 import { sanitizer } from "./sanitizer.js";
@@ -50,8 +52,15 @@ export function engine(keyWord) {
             err = 'Input invalid or too big!'
         }
     } else {
-        numInDefault = num * units()[keyWord][fromUnit];
-        convertedNum = numInDefault / units()[keyWord][toUnit];
+        let x;
+        try {
+            x = new Decimal(num);
+        } catch (error) {
+            return {err: 'Input invalid or too big!'};
+        }
+        let y = new Decimal(units()[keyWord][fromUnit]);
+        let z = new Decimal(units()[keyWord][toUnit]);
+        convertedNum = Number(x.times(y).dividedBy(z));
     }
 
     let result;

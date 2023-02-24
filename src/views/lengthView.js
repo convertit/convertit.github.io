@@ -9,7 +9,7 @@ let lengthTemplate = (onConvert, data) => html`
         <p>equals</p>
         <p id="result">${data.result ? data.result : 0}</p>
         <p id="result-unit">${data.toUnit ? data.toUnit : 'kilometre'}</p>
-        <p class="smaller">${data.convertedNum !== data.result ? 'rounded from ' + data.convertedNum : null}</p>
+        <p class="smaller">${data.convertedNum != data.result ? 'rounded from ' + data.convertedNum : null}</p>
     
     </div>
     

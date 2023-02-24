@@ -1,4 +1,4 @@
-
+import { Decimal } from '../lib/lib.js';
 
 export function convertTemp(fromUnit, toUnit, num) {
     let convertedNum;
@@ -32,9 +32,13 @@ export function convertTemp(fromUnit, toUnit, num) {
 }
 
 function convertCtoF(x) {
-    return (9/5)*x + 32;
+    let xx = new Decimal(x);
+    let y = new Decimal(1.8);
+    return Number((y).times(xx).plus(32));
 }
 
 function convertFtoC(x) {
-    return (x -32)*(5/9);
+    let xx = new Decimal(x);
+    let y = new Decimal(5);
+    return Number(((xx).minus(32)).times(y.dividedBy(9)));
 }
