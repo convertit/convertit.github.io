@@ -64,44 +64,44 @@ let memoryTemplate = (onConvert, data) => html`
         <form id="memoryTo" @change=${onConvert}>
             <legend>To Unit</legend>
             <div class="to">
-                <input class="hover" type="radio" id="to-bit" name="to" value="bit" checked="checked">
-                <label class="hover" for="to-bit">b</label>
-            </div>
-            <div class="to">
                 <input class="hover" type="radio" id="to-byte" name="to" value="byte">
                 <label class="hover" for="to-byte">B</label>
-            </div>
-            <div class="to">
-                <input class="hover" type="radio" id="to-kbit" name="to" value="kilobit">
-                <label class="hover" for="to-kbit">Kb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-kb" name="to" value="kylobyte">
                 <label class="hover" for="to-kb">KB</label>
             </div>
             <div class="to">
-                <input class="hover" type="radio" id="to-mbit" name="to" value="megabit">
-                <label class="hover" for="to-mbit">Mb</label>
-            </div>
-            <div class="to">
                 <input class="hover" type="radio" id="to-mb" name="to" value="megabyte">
                 <label class="hover" for="to-mb">MB</label>
-            </div>
-            <div class="to">
-                <input class="hover" type="radio" id="to-gbit" name="to" value="gigabit">
-                <label class="hover" for="to-gbit">Gb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-gb" name="to" value="gigabyte">
                 <label class="hover" for="to-gb">GB</label>
             </div>
             <div class="to">
-                <input class="hover" type="radio" id="to-tbit" name="to" value="terabit">
-                <label class="hover" for="to-tbit">Tb</label>
-            </div>
-            <div class="to">
                 <input class="hover" type="radio" id="to-tb" name="to" value="terabyte">
                 <label class="hover" for="to-tb">TB</label>
+            </div>
+            <div class="to">
+                <input class="hover" type="radio" id="to-bit" name="to" value="bit" checked="checked">
+                <label class="hover" for="to-bit">b</label>
+            </div>
+            <div class="to">
+                <input class="hover" type="radio" id="to-kbit" name="to" value="kilobit">
+                <label class="hover" for="to-kbit">Kb</label>
+            </div>
+            <div class="to">
+                <input class="hover" type="radio" id="to-mbit" name="to" value="megabit">
+                <label class="hover" for="to-mbit">Mb</label>
+            </div>
+            <div class="to">
+                <input class="hover" type="radio" id="to-gbit" name="to" value="gigabit">
+                <label class="hover" for="to-gbit">Gb</label>
+            </div>
+            <div class="to">
+                <input class="hover" type="radio" id="to-tbit" name="to" value="terabit">
+                <label class="hover" for="to-tbit">Tb</label>
             </div>
         </form>
     </div>`
