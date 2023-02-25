@@ -65,11 +65,20 @@ export function units() {
         terabyte: 1073741824
     }
 
+    let kmphEqual = {
+        kmph: 1,
+        mps: 3.6,
+        mph: 1.609344,
+        fps: 1.09728,
+        knot: 1.852
+    }
+
     return {
         length: cmEqual,
         time: secEqual,
         weight: gramEqual,
         area: sqMEqual,
-        memory: kbEqual
+        memory: kbEqual,
+        speed: kmphEqual
     };
 }

@@ -20,43 +20,43 @@ let memoryTemplate = (onConvert, data) => html`
     
             <div class="from">
                 <input class="hover" type="radio" id="bit" name="from" value="bit" checked="checked">
-                <label class="hover" for="bit">Bit</label>
+                <label class="hover" for="bit">b</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="byte" name="from" value="byte">
-                <label class="hover" for="byte">Byte</label>
+                <label class="hover" for="byte">B</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="kbit" name="from" value="kilobit">
-                <label class="hover" for="kbit">Kilobit</label>
+                <label class="hover" for="kbit">Kb</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="kb" name="from" value="kylobyte">
-                <label class="hover" for="kb">Kylobyte</label>
+                <label class="hover" for="kb">KB</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="mbit" name="from" value="megabit">
-                <label class="hover" for="mbit">Megabit</label>
+                <label class="hover" for="mbit">Mb</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="mb" name="from" value="megabyte">
-                <label class="hover" for="mb">Megabyte</label>
+                <label class="hover" for="mb">MB</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="gbit" name="from" value="gigabit">
-                <label class="hover" for="gbit">Gigabit</label>
+                <label class="hover" for="gbit">Gb</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="gb" name="from" value="gigabyte">
-                <label class="hover" for="gb">Gigabyte</label>
+                <label class="hover" for="gb">GB</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="tbit" name="from" value="terabit">
-                <label class="hover" for="tbit">Terabit</label>
+                <label class="hover" for="tbit">Tb</label>
             </div>
             <div class="from">
                 <input class="hover" type="radio" id="tb" name="from" value="terabyte">
-                <label class="hover" for="tb">Terabyte</label>
+                <label class="hover" for="tb">TB</label>
             </div>
         </form>
     
@@ -65,43 +65,43 @@ let memoryTemplate = (onConvert, data) => html`
             <legend>To Unit</legend>
             <div class="to">
                 <input class="hover" type="radio" id="to-bit" name="to" value="bit" checked="checked">
-                <label class="hover" for="to-bit">Bit</label>
+                <label class="hover" for="to-bit">b</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-byte" name="to" value="byte">
-                <label class="hover" for="to-byte">Byte</label>
+                <label class="hover" for="to-byte">B</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-kbit" name="to" value="kilobit">
-                <label class="hover" for="to-kbit">Kilobit</label>
+                <label class="hover" for="to-kbit">Kb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-kb" name="to" value="kylobyte">
-                <label class="hover" for="to-kb">Kylobyte</label>
+                <label class="hover" for="to-kb">KB</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-mbit" name="to" value="megabit">
-                <label class="hover" for="to-mbit">Megabit</label>
+                <label class="hover" for="to-mbit">Mb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-mb" name="to" value="megabyte">
-                <label class="hover" for="to-mb">Megabyte</label>
+                <label class="hover" for="to-mb">MB</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-gbit" name="to" value="gigabit">
-                <label class="hover" for="to-gbit">Gigabit</label>
+                <label class="hover" for="to-gbit">Gb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-gb" name="to" value="gigabyte">
-                <label class="hover" for="to-gb">Gigabyte</label>
+                <label class="hover" for="to-gb">GB</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-tbit" name="to" value="terabit">
-                <label class="hover" for="to-tbit">Terabit</label>
+                <label class="hover" for="to-tbit">Tb</label>
             </div>
             <div class="to">
                 <input class="hover" type="radio" id="to-tb" name="to" value="terabyte">
-                <label class="hover" for="to-tb">Terabyte</label>
+                <label class="hover" for="to-tb">TB</label>
             </div>
         </form>
     </div>`

@@ -23,7 +23,10 @@ const mobileNavDiv = (toggleMenu) => html`
                         <i class="fa-solid fa-temperature-half unitLogo"></i>Temperature</a></li>
         
                 <li><a href="/memory" id="btn-memory" class="mobileNav" @click=${toggleMenu}>
-                <i class="fa-solid fa-sd-card unitLogo"></i>Memory</a></li>
+                        <i class="fa-solid fa-sd-card unitLogo"></i>Memory</a></li>
+
+                <li><a href="/speed" id="btn-speed" class="mobileNav" @click=${toggleMenu}>
+                        <i class="fa-solid fa-gauge-high unitLogo"></i>Speed</a></li>
             </ul>
         
         </div>`
@@ -38,6 +41,7 @@ export function showNav(ctx, next) {
                 <a href="/weight" id="btn-weight" class="nav">Weight</a>
                 <a href="/temperature" id="btn-temp" class="nav">Temperature</a>
                 <a href="/memory" id="btn-memory" class="nav">Memory</a>
+                <a href="/speed" id="btn-speed" class="nav">Speed</a>
             </nav>`
         render(navTemplate(), document.querySelector('header'));
     } else {

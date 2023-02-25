@@ -22,9 +22,7 @@ export function engine(keyWord) {
         err = 'Input invalid or too big!';
     }
 
-    let numInDefault;
     let convertedNum;
-
 
     for (let el of fromArr) {
         if (el.children[0].checked) {
