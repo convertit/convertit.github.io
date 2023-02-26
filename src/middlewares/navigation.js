@@ -59,7 +59,7 @@ export function showNav(ctx, next) {
 
     next();
 }
-function toggleMenu() {
+export function toggleMenu() {
     if (mobileNav.innerHTML === '') {
         render(mobileNavDiv(toggleMenu), mobileNav);
         toggleNavIcon();

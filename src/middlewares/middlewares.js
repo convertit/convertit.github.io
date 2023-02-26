@@ -1,4 +1,5 @@
 import { html, render, page } from '../lib/lib.js';
+import { toggleMenu } from './navigation.js';
 
 const main = document.querySelector('main');
 
@@ -23,6 +24,7 @@ export function selectedLink(ctx, next) {
         })
         next();
     } else {
+        toggleMenu();
         let navLinksArr = Array.from(document.querySelectorAll('.mobileNav'));
         let mobileSelected = document.querySelector('.mobileSelected');
         navLinksArr.forEach(x => {
@@ -31,10 +33,6 @@ export function selectedLink(ctx, next) {
                 newElement.innerHTML = x.innerHTML;
                 newElement.classList.add('mobileNavP');
 
-                mobileSelected.innerHTML = '';
-                mobileSelected.appendChild(newElement);
-            }
-        })
         next();
     }
 }
