@@ -11,6 +11,7 @@ import { showWeightView } from './views/weightView.js';
 import { showTemp } from './views/temperatureView.js';
 import { showMemory } from './views/memoryView.js';
 import { showSpeedView } from './views/speedView.js';
+import { showVolume } from './views/volumeView.js'
 
 
 
@@ -29,6 +30,7 @@ page('/weight', showWeightView);
 page('/temperature', showTemp);
 page('/memory', showMemory);
 page('/speed', showSpeedView);
+page('/volume', showVolume)
 
 page.start();
 

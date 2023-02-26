@@ -1,5 +1,5 @@
 export function units() {
-    let cmEqual = {
+    const cmEqual = {
         kilometre: 100000,
         mile: 160934.4,
         metre: 100,
@@ -14,7 +14,7 @@ export function units() {
         lightYear: 94607304725808 * 10000
     }
 
-    let secEqual = {
+    const secEqual = {
         year: 31536000,
         month: 2628000,
         week: 604800,
@@ -25,7 +25,7 @@ export function units() {
         millisecond: 0.001
     }
 
-    let gramEqual = {
+    const gramEqual = {
         kilogram: 1000,
         pound: 453.59237,
         gram: 1,
@@ -37,7 +37,7 @@ export function units() {
         ton: 1000000
     }
 
-    let sqMEqual = {
+    const sqMEqual = {
         hectare: 10000,
         acre: 4046.856422,
         decre: 1000,
@@ -52,7 +52,7 @@ export function units() {
         "sq inches": 0.00064516,
     }
 
-    let kbEqual = {
+    const kbEqual = {
         bit: 0.0001220703,
         byte: 0.0009765625,
         kilobit: 0.1249999872,
@@ -65,12 +65,31 @@ export function units() {
         terabyte: 1073741824
     }
 
-    let kmphEqual = {
+    const kmphEqual = {
         kmph: 1,
         mps: 3.6,
         mph: 1.609344,
         fps: 1.09728,
         knot: 1.852
+    }
+
+    const mlEqual = {
+        millilitre: 1,
+        litre: 1000,
+        "cubic cm": 1,
+        "cubic metre": 1000000,
+        "cubic inch": 16.387064,
+        "cubic foot": 28316.846592,
+        "cubic yard": 764554.857984,
+        "fluid ounceUS": 29.5735,
+        "fluid ounceUK": 28.4131,
+        "pint US": 473.176473,
+        "pint UK": 568.26125,
+        "quart US": 946.352946,
+        "quart UK": 1136.5225,
+        "gallon US": 3785.411784,
+        "gallon UK": 4546.09,
+        "oil barrel": 158987.294928
     }
 
     return {
@@ -79,6 +98,7 @@ export function units() {
         weight: gramEqual,
         area: sqMEqual,
         memory: kbEqual,
-        speed: kmphEqual
+        speed: kmphEqual,
+        volume: mlEqual
     };
 }
