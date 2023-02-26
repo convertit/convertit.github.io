@@ -27,11 +27,17 @@ export function selectedLink(ctx, next) {
         toggleMenu();
         let navLinksArr = Array.from(document.querySelectorAll('.mobileNav'));
         let mobileSelected = document.querySelector('.mobileSelected');
-        navLinksArr.forEach(x => {
-            if (x.href.includes(ctx.path) && ctx.path !== '/') {
-                let newElement = document.createElement('p');
-                newElement.innerHTML = x.innerHTML;
-                newElement.classList.add('mobileNavP');
+            navLinksArr.forEach(x => {
+                if (x.href.includes(ctx.path) && ctx.path !== '/') {
+                    let newElement = document.createElement('p');
+                    newElement.innerHTML = x.innerHTML;
+                    newElement.classList.add('mobileNavP');
+    
+                    mobileSelected.innerHTML = '';
+                    mobileSelected.appendChild(newElement);
+                }
+            });
+        toggleMenu();
 
         next();
     }
