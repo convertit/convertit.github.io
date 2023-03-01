@@ -114,18 +114,20 @@ footer {
     }
 
     a.mobileNav {
+        width: 165px;
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: black;
         font-size: 1.5em;
         font-weight: bold;
-        background-color: lightgray;
         margin-top: 0.5em;
         padding: 0.2em;
         border-radius: 10px;
     }
 
     .unitLogo {
-        margin-right: .3em;
+        margin-right: 1em;
     }
 
     div#navBeside {
@@ -141,8 +143,10 @@ footer {
         display: block;
         position: absolute;
         height: 100vh;
+        width: 250px;
         background-color: floralwhite;
         padding: 1em;
+        padding-left: 0em;
         border-radius: 15px;
     }
 

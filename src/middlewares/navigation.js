@@ -8,7 +8,7 @@ const mobileNavDiv = (toggleMenu) => html`
         <div id="navDiv">
             <ul>
                 <li><a href="/length" id="btn-length" class="mobileNav" @click=${toggleMenu}>
-                        <i class="fa-solid fa-ruler-horizontal unitLogo"></i>Length</a></li>
+                        <i class="fa-solid fa-ruler-horizontal unitLogo"></i>Length / Distance</a></li>
         
                 <li><a href="/area" id="btn-length" class="mobileNav" @click=${toggleMenu}>
                         <i class="fa-solid fa-chart-area unitLogo"></i></i>Area</a></li>
@@ -17,7 +17,7 @@ const mobileNavDiv = (toggleMenu) => html`
                         <i class="fa-regular fa-clock unitLogo"></i>Time</a></li>
         
                 <li><a href="/weight" id="btn-weight" class="mobileNav" @click=${toggleMenu}>
-                        <i class="fa-solid fa-scale-unbalanced unitLogo"></i>Weight</a></li>
+                        <i class="fa-solid fa-scale-unbalanced unitLogo"></i>Mass / Weight</a></li>
         
                 <li><a href="/temperature" id="btn-temp" class="mobileNav" @click=${toggleMenu}>
                         <i class="fa-solid fa-temperature-half unitLogo"></i>Temperature</a></li>
